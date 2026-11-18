@@ -1,0 +1,57 @@
+Variant unification (always on):
+  爲 -> 為
+  着 -> 著
+  裏 -> 裡
+  衞 -> 衛
+  啓 -> 啟
+  峯 -> 峰
+  羣 -> 群
+  户 -> 戶
+  賬 -> 帳
+  紀錄 -> 記錄
+
+Colloquial -> written (--map-colloquial; longest key first):
+  佢哋 -> 他們
+  呢個 -> 這個
+  跟住 -> 接著
+  呢度 -> 這裡
+  乜嘢 -> 什麼
+  而家 -> 現在
+  同埋 -> 和
+  直情 -> 直接
+  裡邊 -> 裡面
+  係咪 -> 是不是
+  係 -> 是
+  嘅 -> 的
+  咗 -> 了
+  唔 -> 不
+  冇 -> 沒有
+  佢 -> 他
+  喺 -> 在
+  畀 -> 給
+  俾 -> 給
+  啲 -> 些
+  嚟 -> 來
+  睇 -> 看
+  嗰 -> 那
+  哋 -> 們
+  啊 -> 阿
+  呀 -> 阿
+  須 -> 需
+  仲 -> 還
+  撳 -> 按
+  嘢 -> 東西
+
+English -> Chinese (--map-colloquial; whole tokens only):
+  reply -> 回覆
+  email -> 電郵
+  check -> 查
+  send -> 發
+  reconfirm -> 重新確認
+
+Filler particles deleted (--drop-fillers): 嗯 哦 咦 阿 啊 呀 啦 囉 㗎 啫 吖 喇 喎 咯 嘛 咧 咁
+
+Context rules (--map-colloquial):
+  號 -> 日 only right after a digit (dates: 3號 -> 3日)
+  同 -> 跟 only before 你/我/他 (同你確認 -> 跟你確認)
+  呢一 -> 這一 (plain 呢 is not mapped)

@@ -1,0 +1,10 @@
+.venv/
+__pycache__/
+.pytest_cache/
+.DS_Store
+~$*.docx
+# call recordings' transcripts contain customer data: never commit
+data/groundtruth/*
+data/transcription/*
+results/*
+!.gitkeep
